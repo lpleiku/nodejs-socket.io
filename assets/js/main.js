@@ -1,4 +1,4 @@
-var socket = io('http://localhost:3000');
+var socket = io('https://chatpk.herokuapp.com/');
 
 $(document).ready(function(){
     var alert_name = $('.formName .alert-danger'),
