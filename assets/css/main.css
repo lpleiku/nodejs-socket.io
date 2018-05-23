@@ -43,7 +43,16 @@ input:focus, button:focus, textarea:focus {
     float: left;
     border-right: 1px solid #ccc;
     height: 100vh;
+}
+
+.homePage .sideBar .listMember {
     overflow-y: auto;
+    height: calc(50vh - 34px);
+}
+
+.homePage .sideBar .listRoom {
+    overflow-y: auto;
+    height: calc(50vh - 34px);
 }
 
 .homePage .sideBar label {
@@ -74,6 +83,17 @@ input:focus, button:focus, textarea:focus {
     user-select: none;
 }
 
+.homePage .sideBar .room {
+    padding: 5px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .homePage .sideBar .member:hover {
     background: #eee;
 }
@@ -83,8 +103,29 @@ input:focus, button:focus, textarea:focus {
     float: right;
 }
 
+.content .info {
+    padding: 5px 10px;
+    background: #62d8b6;
+    color: #fff;
+    text-align: right;
+}
+
+.content .info button {
+    padding: 3px 10px;
+    font-size: 12px;
+    background: no-repeat;
+    border: none;
+    color: #fff;
+    float: left;
+    cursor: pointer;
+}
+
+.content .info button:hover{
+    text-decoration: underline;
+}
+
 .content .message {
-    height: calc(100vh - 38px);
+    height: calc(100vh - 38px - 34px);
     overflow-y: auto;
     padding: 5px;
 }

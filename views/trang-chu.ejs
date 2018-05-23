@@ -14,7 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" async></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" async></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" async></script>
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <div class="formName">
@@ -27,13 +27,39 @@
     <div class="homePage">
         <div class="sideBar">
             <label>Member</label>
-            <div class="listMember">
-
-            </div>
+            <div class="listMember"></div>
+            <label>Room</label>
+            <div class="listRoom"></div>
         </div>
         <div class="content">
+            <div class="info">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Create Room
+                </button>
+                <span class="username"></span>
+            </div>
             <div class="message"></div>
             <input type="text" class="form-control" id="inputMessage" placeholder="Enter text...">
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create Room</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger d-none" role="alert"></div>
+                    <input type="text" id="input-room" class="form-control" placeholder="Enter Room...">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary create-room">Create</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
